@@ -1,0 +1,86 @@
+
+.intro {
+  padding: $space-lg;
+}
+
+.last-articles {
+  padding: $space-lg;
+
+  h2 {
+    margin-bottom: $space-lg;
+  }
+
+  .card-article {
+    background-color: $second-color;
+    border-radius: $radius;
+    padding: $space-md;
+    margin-bottom: $space-lg;
+
+    img {
+      max-height: 140px;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin-bottom: $space-lg;
+    }
+  }
+}
+
+.gallery {
+  padding: $space-lg;
+
+  h2 {
+    margin-bottom: $space-lg;
+  }
+}
+
+.newsletter,
+.contact {
+  text-align: center;
+  padding: $space-lg;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    margin: auto;
+    max-width: 400px;
+  }
+  .form-field {
+    padding: $space-md;
+    font-size: $space-lg;
+    border-radius: $radius;
+    border: 1px solid $second-color;
+  }
+}
+
+.btn {
+  background-color: $first-color;
+  color: $light-color;
+  padding: $space-md;
+  font-size: $space-lg;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($first-color, 10%);
+  }
+}
+
+.pricing {
+  text-align: center;
+  padding: $space-lg;
+
+  .price-box {
+    background-color: $light-color;
+    border: 1px solid $second-color;
+    border-radius: $radius;
+    padding: $space-md;
+
+    h3 {
+      margin-bottom: $space-sm;
+    }
+  }
+}

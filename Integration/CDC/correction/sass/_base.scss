@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-main;
+  background-color: $light-color;
+  color: $dark-color;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: $first-color;
+}
+
+a {
+  text-decoration: none;
+  color: $first-color;
+
+  &:hover {
+    color: $second-color;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: $radius;
+}

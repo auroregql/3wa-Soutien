@@ -1,0 +1,95 @@
+
+/******************* MOBILE *********************/
+
+.main-header {
+  background-color: $first-color;
+  color: $light-color;
+  padding: $space-md;
+  text-align: center;
+
+  img {
+    width: auto;
+  }
+
+  h1 {
+    color: $dark-color;
+  }
+}
+
+.main-nav ul {
+  list-style: none;
+  margin-top: $space-sm;
+  padding: 0;
+  margin: 0;
+
+  li a {
+    color: $light-color;
+    font-weight: bold;
+    padding: $space-md;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+      color: $first-color;
+      background-color: $light-color;
+    }
+  }
+}
+
+.main-footer {
+  background-color: $dark-color;
+  color: $light-color;
+  text-align: center;
+  padding: $space-sm;
+  margin-top: $space-lg;
+}
+
+.small-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: $space-sm;
+  margin: $space-lg 0;
+}
+
+/******************* TABLETTE *********************/
+@media screen and (min-width: $bp-tablette) {
+  .main-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    h1 {
+      flex-grow: 1;
+    }
+  }
+
+  .main-nav {
+    flex: 1 0 100%;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+/******************* DESKTOP *********************/
+@media screen and (min-width: $bp-desktop) {
+  .main-nav {
+    flex-basis: 0;
+  }
+
+  .container {
+    max-width: $bp-desktop;
+    margin: auto;
+  }
+}

@@ -1,0 +1,44 @@
+/*NIVEAU 1*/
+
+header {
+    display:flex;
+    justify-content:space-between;
+}
+
+header, .container-1, .container-2 {
+    border: 2px solid purple;
+    background-color:pink;
+    padding:1em;
+}
+
+.container-2 {
+    width:800px;
+}
+
+.main {
+    display:flex;
+}
+
+/*NIVEAU 2 */
+
+.country {
+    display:flex;
+    justify-content:space-around;
+}
+
+.menu {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.cat {
+    
+}
+
+.country, .cat, .menu, .img, .img-2, .articles, .articles-2, .articles-3 {
+    background-color:lightgreen;
+    border: 2px solid green;
+    padding:1em;
+    margin:1em;
+}

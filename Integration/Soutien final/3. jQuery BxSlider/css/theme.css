@@ -1,0 +1,21 @@
+/* Le code CSS de l'exercice dirigé */
+
+.bx-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+figure {
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  display: block;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}

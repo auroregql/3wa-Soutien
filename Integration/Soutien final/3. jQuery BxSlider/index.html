@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="Exercice 1 - Soutien final">
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="css/common-v3.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Carroussel</h1>
+        <p>Carroussel d'images avec le plugin jQuery Bx Slider</p>
+    </header>
+    <main class="container main-content">
+        <ul class="bxslider">
+          <li>
+            <figure>
+              <img src="ressources/hollywood1.jpg" alt="">
+              <figcaption>Légende image 1</figcaption>
+            </figure>
+          </li>
+        
+          <li>
+            <figure>
+              <img src="ressources/hollywood2.jpg" alt="">
+              <figcaption>Légende image 2</figcaption>
+            </figure>
+          </li>
+        
+          <li>
+            <figure>
+              <img src="ressources/hollywood3.jpg" alt="">
+              <figcaption>Légende image 3</figcaption>
+            </figure>
+          </li>
+        
+          <li>
+            <figure>
+              <img src="ressources/hollywood4.jpg" alt="">
+              <figcaption>Légende image 4</figcaption>
+            </figure>
+          </li>
+        </ul>
+    </main>
+    <footer class="footer">
+		<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="https://3wa.fr/wp-content/themes/3wa2015/img/logos/big.png"></a></p>
+		<p>Ce matériel pédagogique est la propriété de la <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">3W Academy</a>. Cet exercice a été réalisé par Stephane Pereck.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+          pager: true,
+          controls: false,
+          auto: false,
+          mode: 'horizontal',
+          captions: false
+        });
+    });
+    </script>
+
+</body>
+</html>
