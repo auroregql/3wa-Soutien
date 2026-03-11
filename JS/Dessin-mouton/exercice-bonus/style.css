@@ -1,0 +1,17 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(100, 20px);
+  grid-template-rows: repeat(100, 20px);
+  width: 2000px;
+  height: 2000px;
+  border: solid 2px black;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: crosshair;
+  border: 1px solid lightgray;
+}
